@@ -1,0 +1,183 @@
+* {
+	font-family: 'Comic Neue', cursive;
+}
+p {
+	
+	background-color: #C0C0C0;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-block-start:0px;
+	color: black;
+	float: left;
+	padding: 2%;
+	padding-top: unset;
+	font-size: 21px;
+}
+
+body{
+	background-color: white;
+}
+
+.head {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 30px;
+	background-color: white;
+	font-size: 30px;
+
+}
+.box {
+	width: 100%;
+}
+
+.header {
+	text-align: center;
+    padding-bottom: 20px;
+    background-color: #C0C0C0;
+    font-size: x-large;
+    width: 95%;
+    margin:0 auto;
+    font-weight: bold;
+}
+
+#header-nav {
+  background-color: #c0c0c0;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 {;
+  color: black;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  float:left;
+
+}
+h1 {
+	margin-left: 30px;
+}
+
+
+.navbar-brand p { 
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { 
+  vertical-align: middle;
+}
+.title {
+	color: black;
+	float: left;
+	
+}
+.navbar-header{
+	float: left;
+}
+
+.container {
+  	margin: unset;
+}
+span {
+	    font-size: 32px;
+}
+
+
+button.navbar-toggle.collapsed {
+	margin-top: 16px;
+	border-color: black;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    display: block;
+    width: 17px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: black;
+}
+
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid transparent;
+    border-bottom: unset;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #000000;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #332f2f;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    border-bottom-style: groove;
+    text-align: center;
+    font-size: x-large;
+}
+
+.navbar-nav {
+    margin: 7.5px -15px;
+    margin-bottom: unset;
+    margin-top: unset;
+}
+
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 16px;
+}
+
+
+@media (max-width: 767px){
+  .header {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  p {
+    background-color: #C0C0C0;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-start: 0px;
+    color: black;
+    float: left;
+    padding: 2%;
+    padding-top: unset;
+    font-size: 15px;
+  }
+
+  span {
+      font-size: 23px;
+  }
+
+  .head {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8px;
+    background-color: white;
+    font-size: 24px;
+  }
+}
