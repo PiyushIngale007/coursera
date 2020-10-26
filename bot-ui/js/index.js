@@ -35,7 +35,7 @@ function listendom(no) {
 }
 
 $(window).load(function () {
-  $messages.mCustomScrollbar();
+  
   
   setTimeout(function () {
     serverMessage(
