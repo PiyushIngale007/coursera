@@ -44,19 +44,6 @@ $(window).load(function () {
   }, 100);
 });
 
-function updateScrollbar() {
-  $messages.mCustomScrollbar("update").mCustomScrollbar("scrollTo", "bottom", {
-    scrollInertia: 10,
-    timeout: 0,
-  });
-}
-
-function update_res_Scrollbar() {
-  $res_messages.mCustomScrollbar("update").mCustomScrollbar("scrollTo", "bottom", {
-    scrollInertia: 10,
-    timeout: 0,
-  });
-}
 
 function insertMessage() {
   msg = $(".message-input").val();
@@ -69,7 +56,7 @@ function insertMessage() {
   fetchmsg();
 
   $(".message-input").val(null);
-  updateScrollbar();
+ 
 }
 
 document.getElementById("mymsg").onsubmit = (e) => {
@@ -85,7 +72,7 @@ function serverMessage(response2) {
     '<div class="message loading new mCustomscrollBox"><figure class="avatar"><img src="css/AppleSiriIcon2017.png" /></figure><span></span></div>'
   ).appendTo($(".mCSB_container"));
 
-  updateScrollbar();
+  
 
   setTimeout(function () {
     $(".message.loading").remove();
@@ -97,7 +84,7 @@ function serverMessage(response2) {
       .appendTo($(".mCSB_container"))
       .addClass("new");
       
-    updateScrollbar();
+    
   }, 100 + Math.random() * 20 * 100);
 }
 
@@ -124,12 +111,12 @@ function fetchmsg() {
       try{
         document.getElementById("qw").innerHTML = '<figure class="avatar"><img src="css/AppleSiriIcon2017.png" /></figure>' + response.Reply.fulfillmentText + '<br><img src="' + response.Reply.fulfillmentMessages[1].card.imageUri + '"/>' + "<div>"+response.Reply.fulfillmentMessages[1].card.title+"</div>"+ "<div>"+response.Reply.fulfillmentMessages[2].text.text+"</div>";
         console.log(Object.keys(response.Reply.fulfillmentMessages[1]))
-        update_res_Scrollbar();
+      
       }
       catch (err){
         document.getElementById("qw").innerHTML = '<figure class="avatar"><img src="css/AppleSiriIcon2017.png" /></figure>' + response.Reply.fulfillmentText;
         console.log(Object.keys(response.Reply.fulfillmentMessages))
-        update_res_Scrollbar();
+        
       }
       try{
         document.getElementById("qw").innerHTML = '<figure class="avatar"><img src="css/AppleSiriIcon2017.png" /></figure>' + response.Reply.fulfillmentText + response.Reply.fulfillmentMessages[1].text.text;
